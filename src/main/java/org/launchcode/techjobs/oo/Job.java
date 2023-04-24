@@ -47,6 +47,19 @@ public class Job {
         return Objects.hash(getId());
     }
 
+    @Override
+    public String toString(){
+        String printJobInfo = "\n"+
+                "ID: " + this.getId() + "\n" +
+                "Name: " + this.getName() + "\n" +
+                "Employer: " + this.getEmployer() + "\n" +
+                "Location: " + this.getLocation() + "\n" +
+                "Position Type: " + this.getPositionType() + "\n" +
+                "Core Competency: " + this.getCoreCompetency() + "\n";
+        String printJobInfoNoNulls = printJobInfo.replace("null", "Data not available").replace(": \n",": Data not available\n");
+        return printJobInfoNoNulls;
+
+    }
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
 
