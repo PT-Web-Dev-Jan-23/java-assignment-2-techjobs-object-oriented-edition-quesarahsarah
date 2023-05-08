@@ -74,5 +74,6 @@ public class JobTest {
                 "Position Type: Quality control\n" +
                 "Core Competency: Persistence\n", job.toString());
     }
-
 }
+
+
